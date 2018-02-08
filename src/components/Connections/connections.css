@@ -17,10 +17,11 @@
 
 .connections span {
 	color: #45A9EA;
+  font-weight: bold;
 }
 
-.connections .preview-connections {
-
+.connections span:hover {
+  color: #f2d500;
 }
 
 /*crap any size and shap image into square*/
@@ -53,10 +54,11 @@
 
 .connections .find-people {
   color: #45A9EA;
+  font-weight: bold;
 }
 
 .connections .find-people:hover {
-
+  color: #f2d500;
 }
 
 
