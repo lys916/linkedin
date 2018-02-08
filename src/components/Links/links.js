@@ -1,7 +1,6 @@
 import React from 'react';
 import './links.css';
 import links from './links-data';
-console.log(links);
 
 function Links(props) {
 	return (
