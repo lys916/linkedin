@@ -9,6 +9,8 @@
 	text-align: center;
 	color: #777777;
 	justify-content: center;
+	position: fixed;
+	top: 320px;
 }
 
 .site-map .site-link {

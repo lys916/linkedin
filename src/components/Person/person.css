@@ -8,8 +8,16 @@
   background: #f2f2f2;
 }
 
+.person img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-top: 12px;
+  border-radius: 50%;
+}
+
 /*crap any size and shap image into square*/
-.person .frame {
+/*.person .frame {
   display: inline-block;
   vertical-align: top;
   padding: 10px;
@@ -23,8 +31,9 @@
   position: relative;
   border-radius: 50%;
   border: 1px solid gray;
- }
- .person .frame .crop img {
+
+ }*/
+/* .person .frame .crop img {
  	width: 140px;
     min-width: 100%;
     min-height: 100%;
@@ -34,7 +43,8 @@
     right: -100%;
     bottom: -100%;
     left: -100%;
-  }
+
+  }*/
 /*crap any size and shap image into square*/
 .person .name {
 	font-weight: bold;

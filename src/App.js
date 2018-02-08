@@ -45,17 +45,21 @@ class App extends Component {
           <Navbar />
         </div>
         <div className="wrapper">
-          <div className="top-ad"><span>Need a new phone system??</span> - G12 Hosted PBX, Award winning customer care, fast porting and deployment</div>
+          <div className="top-ad-parent">
+            <div className="top-ad"><span>Need a new phone system??</span> - G12 Hosted PBX, Award winning customer care, fast porting and deployment</div>
+          </div>
           <div className="content"> 
+              <div className="content-left">
               <Connectons people={this.state.people} changeView={this.handleView}/>
+              </div>
               <div>
                 <div className="pending">
                   <div className="no-pending">No pending invitations</div>
                   <div className="manage-all">Manage all</div>
                 </div>
-                <PeopleList className="people-component" people={this.state.people} view={this.state.view} handleConnect={this.handleConnect} viewTitle={this.state.viewTitle}/>
+                <PeopleList people={this.state.people} view={this.state.view} handleConnect={this.handleConnect} viewTitle={this.state.viewTitle}/>
               </div>
-              <div>
+              <div className="content-right">
                 <Ads />
                 <SiteMap />
               </div>

@@ -5,9 +5,11 @@ import Search from '../Search/search';
 
 function PeopleList(props) {
 	return (
-		<div className="navbar">
-			<Search />
-			<Links />
+		<div className="nav-parent">
+			<div className="navbar">
+				<Search />
+				<Links />
+			</div>
 		</div>
 	)
 }

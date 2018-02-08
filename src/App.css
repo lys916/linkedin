@@ -1,16 +1,26 @@
 .App {
 	text-align: center;
 	max-width: 1120px;
-	margin:2px auto;
+	margin:0 auto;
 }
 .wrapper {
 	width: 1050px;
 	margin: 0 auto;
 }
+.App .top-ad-parent {
+	height: 34px;
+}
 .App .top-ad {
 	font-size: 12px;
 	padding: 10px;
 	text-decoration: underline;
+	width: 800px;
+	position: fixed;
+	left: 50%;
+	margin-left: -400px;
+	background: #f2f2f2;
+	height: 14px;
+	border-bottom: 1px solid #dddddd;
 }
 .App .top-ad span {
 	color: #45A9EA;
@@ -42,4 +52,12 @@
 	float: right;
 	font-size: 12px;
 	padding: 13px 20px 0px 0px;
+}
+
+.content .content-left {
+	width:218px;
+}
+
+.content .content-right {
+	width: 280px;
 }

@@ -6,7 +6,7 @@ function Search(props) {
 		<div className="search">
 			<div className="logo">in</div>
 			<form>
-				<input placeholder="search"></input>
+				<input placeholder="search" ></input>
 			</form>
 		</div>
 	)

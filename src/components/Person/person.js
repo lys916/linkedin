@@ -6,11 +6,9 @@ function Person(props) {
 
 return (
 	<div className="person">
-		<div className="frame">
-			<div className="crop">
+
 				<img src={props.person.imageUrl} alt="img" />
-			</div>
-		</div>
+
 		<div className="name">{props.person.username}</div>
 		<div className="occupation">{props.person.occupation}</div>
 		<div className="connect" onClick={()=>{props.handleConnect(props.person.id)}}>{props.buttonText}</div>
