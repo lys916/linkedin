@@ -2,13 +2,16 @@ import React from 'react';
 import './connections.css';
 
 function Connections(props) {
-	let preview = props.connections.slice(0, 4);
+	let connected = props.people.filter((person)=>{
+		return person.connected === true;
+	});
+	let preview = connected.slice(0, 4);
 	return (
 		<div className="connections">
 			<div className="total-connections">
-				{props.connections.length}
+				{connected.length}
 			</div>
-			<p><b>Your connections</b><br/><span>See all</span></p>
+			<p><b>Your connections</b><br/><span onClick={()=>{props.changeView({view: 'connections', viewTitle: 'My connections'})}}>See all</span></p>
 
 			<div className="preview-connections">
 
@@ -25,6 +28,8 @@ function Connections(props) {
 			</div>
 			<br/><br/>
 			<div className="lineAccross"></div>
+			<br/>
+			<div className="find-people" onClick={()=>{props.changeView({view: 'people', viewTitle: 'People you may know'})}}>Find people</div>
 			<br/>
 			<p><b>Add personal contacts</b></p>
 			<form>

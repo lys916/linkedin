@@ -116,14 +116,14 @@ const People = [
         occupation: 'People Walker',
         imageUrl: 'http://photos.jibble.org/Wildlife%20and%20Pets/Other%20Pets/Nelson_The_Dog_With_A_Stick_IMG_0596.jpg',
         id: 17,
-        connected: true,
-    },
-    {
-        username: "Kitty Kat",
-        occupation: 'Unemployed',
-        imageUrl: 'https://i.kinja-img.com/gawker-media/image/upload/s--Sa8eI0xi--/c_scale,f_auto,fl_progressive,q_80,w_800/18ixcbxyge3svjpg.jpg',
-        id: 18,
         connected: false,
+    },
+        {
+        username: "Doggy Dog",
+        occupation: 'People Walker',
+        imageUrl: 'http://photos.jibble.org/Wildlife%20and%20Pets/Other%20Pets/Nelson_The_Dog_With_A_Stick_IMG_0596.jpg',
+        id: 18,
+        connected: true,
     }
 ];
 

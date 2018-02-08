@@ -4,6 +4,9 @@
 	width: 33.33%;
 	box-sizing: border-box;
 }
+.person:hover {
+  background: #f2f2f2;
+}
 
 /*crap any size and shap image into square*/
 .person .frame {

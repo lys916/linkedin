@@ -3,6 +3,7 @@ import './person.css';
 import styled from 'styled-components';
 
 function Person(props) {
+
 return (
 	<div className="person">
 		<div className="frame">
@@ -12,7 +13,7 @@ return (
 		</div>
 		<div className="name">{props.person.username}</div>
 		<div className="occupation">{props.person.occupation}</div>
-		<div className="connect">Connect</div>
+		<div className="connect" onClick={()=>{props.handleConnect(props.person.id)}}>{props.buttonText}</div>
 	</div>
 );
 }

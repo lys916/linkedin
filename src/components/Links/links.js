@@ -14,7 +14,7 @@ function Links(props) {
 				);
 			})}
 			<div className="link">
-				<div className="premium">Free Upgrad <br/> to Premium</div>
+				<div className="premium">Free Upgrade <br/> to Premium</div>
 			</div>
 		</div>
 	)

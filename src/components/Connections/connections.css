@@ -50,6 +50,15 @@
  }
 /*crap any size and shap image into square*/
 
+.connections .find-people {
+  color: #45A9EA;
+}
+
+.connections .find-people:hover {
+
+}
+
+
 .connections input {
   width: 180px;
   padding: 5px;

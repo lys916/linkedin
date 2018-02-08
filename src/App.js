@@ -8,16 +8,36 @@ import Navbar from './components/Navbar/navbar';
 import Ads from './components/Ads/ads';
 import SiteMap from './components/SiteMap/site-map';
 
-let connections = peopleData.filter((connect)=>{
-    return connect.connected === true;
-});
+// let connections = peopleData.filter((connect)=>{
+//     return connect.connected === true;
+// });
 
-let people = peopleData.filter((connect)=>{
-    return connect.connected === false;
-});
+// let people = peopleData.filter((connect)=>{
+//     return connect.connected === false;
+// });
 
 
 class App extends Component {
+
+  state = {people: peopleData, view: 'people', viewTitle: 'People you may know'};
+
+  handleConnect = (id) => {
+   let people = this.state.people;
+   people.forEach((person)=>{
+    if(person.id === id && person.connected === false) {
+      person.connected = true;
+    }else if(person.id === id && person.connected === true){
+      person.connected = false;
+    }
+   });
+
+   this.setState({people: people});
+  }
+
+  handleView = (data) => {
+    this.setState({view: data.view, viewTitle: data.viewTitle});
+  }
+
   render() {
     return (
       <div className="App">
@@ -27,13 +47,13 @@ class App extends Component {
         <div className="wrapper">
           <div className="top-ad"><span>Need a new phone system??</span> - G12 Hosted PBX, Award winning customer care, fast porting and deployment</div>
           <div className="content"> 
-              <Connectons connections={connections}/>
+              <Connectons people={this.state.people} changeView={this.handleView}/>
               <div>
                 <div className="pending">
-                  <div className="no-pending">No pending inviations</div>
+                  <div className="no-pending">No pending invitations</div>
                   <div className="manage-all">Manage all</div>
                 </div>
-                <PeopleList className="people-component" people={people}/>
+                <PeopleList className="people-component" people={this.state.people} view={this.state.view} handleConnect={this.handleConnect} viewTitle={this.state.viewTitle}/>
               </div>
               <div>
                 <Ads />
