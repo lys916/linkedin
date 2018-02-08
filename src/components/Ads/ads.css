@@ -30,6 +30,10 @@
 	text-align: left;
 }
 
+.ad .description:hover {
+	color: #45A9EA;
+}
+
 .ad .arrow {
 	margin: 17px 0px 0px 10px;
 }

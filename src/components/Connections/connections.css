@@ -66,6 +66,10 @@
   font-weight: bold;
   font-size: 15px;
 }
+.connections .continue:hover {
+  background: #45A9EA;
+  color: white;
+}
 
 .lineAccross{
 	border-top: 1px solid #dddddd;

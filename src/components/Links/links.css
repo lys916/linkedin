@@ -8,6 +8,10 @@
 	font-size: 11px;
 }
 
+.links .link:hover {
+	color: #45A9EA;;
+}
+
 .links .icon {
 	font-size: 17px;
 }

@@ -6,6 +6,7 @@ import PeopleList from './components/PeopleList/people-list';
 import Connectons from './components/Connections/connections';
 import Navbar from './components/Navbar/navbar';
 import Ads from './components/Ads/ads';
+import SiteMap from './components/SiteMap/site-map';
 
 let connections = peopleData.filter((connect)=>{
     return connect.connected === true;
@@ -28,13 +29,16 @@ class App extends Component {
           <div className="content"> 
               <Connectons connections={connections}/>
               <div>
-              <div className="pending">
-                <div className="no-pending">No pending inviations</div>
-                <div className="manage-all">Manage all</div>
+                <div className="pending">
+                  <div className="no-pending">No pending inviations</div>
+                  <div className="manage-all">Manage all</div>
+                </div>
+                <PeopleList className="people-component" people={people}/>
               </div>
-              <PeopleList className="people-component" people={people}/>
+              <div>
+                <Ads />
+                <SiteMap />
               </div>
-              <Ads />
           </div>
         </div>
       </div>

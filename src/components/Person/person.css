@@ -44,6 +44,7 @@
 .person .connect {
 	background: white;
 	margin: 5px auto;
+  margin-bottom: 12px;
 	border:1px solid #45A9EA;
 	color: #45A9EA;
 	width: 80px;
@@ -51,4 +52,9 @@
 	padding: 3px;
 	border-radius: 4px;
 	font-size: 14px;
+}
+
+.person .connect:hover {
+  background: #45A9EA;
+  color: white;
 }
