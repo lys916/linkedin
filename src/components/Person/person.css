@@ -1,0 +1,54 @@
+.person {
+	border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+	width: 33.33%;
+	box-sizing: border-box;
+}
+
+/*crap any size and shap image into square*/
+.person .frame {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  width: 90px;
+  height: 90px;
+}
+
+.person .frame .crop {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid gray;
+ }
+ .person .frame .crop img {
+ 	width: 140px;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+  }
+/*crap any size and shap image into square*/
+.person .name {
+	font-weight: bold;
+	padding: 3px;
+}
+.person .occupation {
+	font-size: 15px;
+	padding: 3px;
+}
+.person .connect {
+	background: white;
+	margin: 5px auto;
+	border:1px solid #45A9EA;
+	color: #45A9EA;
+	width: 80px;
+	font-weight: bold;
+	padding: 3px;
+	border-radius: 4px;
+	font-size: 14px;
+}

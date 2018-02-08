@@ -1,0 +1,18 @@
+.links {
+	display: flex;
+	justify-content: center;
+}
+.links .link {
+	color: white;
+	padding: 7px 15px 0px 15px;
+	font-size: 11px;
+}
+
+.links .icon {
+	font-size: 17px;
+}
+
+.links .premium {
+	color: gold;
+	padding-top: 2px;
+}

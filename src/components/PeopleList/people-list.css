@@ -1,0 +1,22 @@
+.people {
+	width: 500px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid #dddddd;
+	color: #777777;
+	box-shadow: 0px 2px #bbbbbb;
+	background: white;
+}
+.people .may-know {
+	box-sizing: border-box;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	padding: 10px;
+}
+.people .people-list {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}

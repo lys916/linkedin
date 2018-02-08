@@ -1,0 +1,20 @@
+.search {
+	display: flex;
+	background: #305c60;
+}
+.search .logo {
+	background: #45A9EA;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	width: 35px;
+	height: 32px;
+	margin: 5px;
+	border-radius: 3px;
+}
+.search input {
+	height: 26px;
+	margin-top: 5px;
+	width: 250px;
+	padding-left: 5px;
+}

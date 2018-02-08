@@ -1,0 +1,6 @@
+.navbar {
+	display: flex;
+	text-align: center;
+	background: #305c60;
+	justify-content: space-around;
+}
