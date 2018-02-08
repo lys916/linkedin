@@ -1,3 +1,9 @@
+Netlify - LinkedIn-clone project
+https://dazzling-northcutt-8ffc6e.netlify.com
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
