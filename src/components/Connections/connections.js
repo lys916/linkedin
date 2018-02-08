@@ -14,7 +14,7 @@ function Connections(props) {
 
 			{preview.map((connect)=>{
 				return (
-					<div className="frame">
+					<div key={connect.id} className="frame">
 						<div className="crop">
 							<img src={connect.imageUrl} alt="img" />
 						</div>
@@ -32,7 +32,7 @@ function Connections(props) {
 				<div className="continue">Continue</div>
 				<p >More options</p>
 				<div className="lineAccross"></div>
-				<p class="message">We'll import your address book to suggest connections. Learn more</p>
+				<p className="message">We'll import your address book to suggest connections. Learn more</p>
 			</form>
 		</div>
 	);

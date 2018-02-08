@@ -1,38 +1,20 @@
 import React from 'react';
 import './links.css';
+import links from './links-data';
+console.log(links);
 
 function Links(props) {
 	return (
 		<div className="links">
-			<div className="link home">
-				<i class="icon fas fa-home"></i>
-				<div>Home</div>
-			</div>
-			<div className="link network">
-				<i className="icon fas fa-users"></i>
-				<div>My Network</div>
-			</div>
-			<div className="link jobs">
-				<i className="icon fas fa-suitcase"></i>
-				<div>Jobs</div>
-			</div>
-			<div className="link messaging">
-				<i className="icon fas fa-comments"></i>
-				<div>Messaging</div>
-			</div>
-			<div className="link notifications">
-				<i className="icon fas fa-bell"></i>
-				<div>Notifications</div>
-			</div>
-			<div className="link me">
-				<i className="icon fas fa-user-circle"></i>
-				<div>Me</div>
-			</div>
-			<div className="link work">
-				<i className="icon fas fa-building"></i>
-				<div>Work</div>
-			</div>
-			<div className="link work">
+			{links.map((link)=>{
+				return (
+					<div className="link">
+						<i className={"icon fas "+link.icon}></i>
+						<div>{link.name}</div>
+					</div>
+				);
+			})}
+			<div className="link">
 				<div className="premium">Free Upgrad <br/> to Premium</div>
 			</div>
 		</div>

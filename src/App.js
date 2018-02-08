@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import peopleData from './people-data';
-import adList from './ad-data';
 import PeopleList from './components/PeopleList/people-list';
 import Connectons from './components/Connections/connections';
 import Navbar from './components/Navbar/navbar';
@@ -25,7 +24,7 @@ class App extends Component {
           <Navbar />
         </div>
         <div className="wrapper">
-          <div class="top-ad"><span>Need a new phone system??</span> - G12 Hosted PBX, Award winning customer care, fast porting and deployment</div>
+          <div className="top-ad"><span>Need a new phone system??</span> - G12 Hosted PBX, Award winning customer care, fast porting and deployment</div>
           <div className="content"> 
               <Connectons connections={connections}/>
               <div>
@@ -35,7 +34,7 @@ class App extends Component {
               </div>
               <PeopleList className="people-component" people={people}/>
               </div>
-              <Ads adList={adList} />
+              <Ads />
           </div>
         </div>
       </div>
